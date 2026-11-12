@@ -1,0 +1,20 @@
+# cursor-config — deny by default, track only allowlisted paths
+*
+
+!.gitignore
+!README.md
+!extensions.txt
+
+!cli-config.json
+
+!skills/
+!skills/**
+
+!extensions/
+!extensions/close-file-tabs-only/
+!extensions/close-file-tabs-only/**
+
+!cursor/
+!cursor/User/
+!cursor/User/settings.json
+!cursor/User/keybindings.json

@@ -1,0 +1,21 @@
+{
+  "name": "close-file-tabs-only",
+  "displayName": "Close file tabs only",
+  "description": "Close all editor tabs except agent/composer chats",
+  "version": "1.0.2",
+  "publisher": "sebastian",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished", "onCommand:closeFileTabsOnly.closeAll"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "closeFileTabsOnly.closeAll",
+        "title": "Close All File Tabs (Keep Agent Chats)"
+      }
+    ]
+  }
+}
