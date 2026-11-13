@@ -1,0 +1,17 @@
+---
+description: Run Omarchy/shell reloads yourself after config or plugin edits
+globs: "**/.config/omarchy/**,**/.config/hypr/**,**/omarchy/plugins/**,**/.config/alacritty/**,**/.config/foot/**,**/.config/kitty/**,**/.config/ghostty/**"
+alwaysApply: false
+---
+
+# Omarchy — reload after changes
+
+After editing Omarchy shell, plugins (`~/.config/omarchy/plugins/`), `shell.json`, or related Hyprland/Omarchy config that requires a running shell to pick up changes:
+
+1. **Run the reload yourself** — do not ask the user to restart or refresh manually.
+2. **Use the right command:**
+   - Plugin QML/JS: `omarchy-shell shell rescanPlugins` (or save under plugins; often hot-reloads alone).
+   - Shell service / `shell.json`: `omarchy restart shell`
+   - **Never** use `omarchy refresh shell` to “reload” — it resets `shell.json` to package defaults (backs up first but still destructive).
+
+If a mistaken `omarchy refresh shell` was run, restore the newest `shell.json.bak.*` and restart the shell.
