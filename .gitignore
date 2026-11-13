@@ -2,15 +2,20 @@
 # Ignore everything in .cursor
 *
 
-# User's personal skills
+!workspaces/
+!workspaces/**
+
 !skills/
 !skills/**
-# User's personal slash commands
+
 !commands/
 !commands/**
-# User-level cursor rules
+
 !rules/
 !rules/**
-# <<< CURSOR MANAGED BLOCK <<<
+
 !cursor/User/
 !cursor/User/**
+
+!extensions/close-file-tabs-only/
+!extensions/close-file-tabs-only/**

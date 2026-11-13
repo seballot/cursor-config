@@ -1,0 +1,12 @@
+{
+  "name": "CALM registration",
+  "install": "bash .cursor/scripts/cloud-server/install.sh",
+  "start": "bash .cursor/scripts/cloud-server/start.sh",
+  "terminals": [
+    {
+      "name": "rails-server",
+      "command": "bash .cursor/scripts/cloud-server/start.sh && sudo docker exec --env-file .env $(sudo docker compose ps -q app) docker/server.sh"
+    }
+  ],
+  "ports": [{ "name": "rails", "port": 3000 }]
+}
