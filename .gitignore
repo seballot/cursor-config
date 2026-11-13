@@ -1,20 +1,16 @@
-# cursor-config — deny by default, track only allowlisted paths
+# >>> CURSOR MANAGED BLOCK >>>
+# Ignore everything in .cursor
 *
 
-!.gitignore
-!README.md
-!extensions.txt
-
-!cli-config.json
-
+# User's personal skills
 !skills/
 !skills/**
-
-!extensions/
-!extensions/close-file-tabs-only/
-!extensions/close-file-tabs-only/**
-
-!cursor/
+# User's personal slash commands
+!commands/
+!commands/**
+# User-level cursor rules
+!rules/
+!rules/**
+# <<< CURSOR MANAGED BLOCK <<<
 !cursor/User/
-!cursor/User/settings.json
-!cursor/User/keybindings.json
+!cursor/User/**
