@@ -46,14 +46,22 @@ projects/*/*
 
 # cursor-config — tracked paths (outside Cursor-managed block)
 !.gitignore
+!.cursorignore
+!.cursorindexingignore
 !README.md
 !extensions.txt
 !cli-config.json
+!.vscode/
+.vscode/*
+!.vscode/settings.json
 !workspaces/
 !workspaces/**
 !cursor/
+cursor/*
 !cursor/User/
 !cursor/User/**
+!extensions/
+extensions/*
 !extensions/close-file-tabs-only/
 !extensions/close-file-tabs-only/**
 
